@@ -356,6 +356,7 @@ mod repeat_once;
 mod return_self_not_must_use;
 mod returns;
 mod same_name_method;
+mod seek_instead_of_rewind;
 mod self_named_constructors;
 mod semicolon_if_nothing_returned;
 mod serde_api;
@@ -917,6 +918,7 @@ pub fn register_plugins(store: &mut rustc_lint::LintStore, sess: &Session, conf:
     store.register_late_pass(move || Box::new(operators::Operators::new(verbose_bit_mask_threshold)));
     store.register_late_pass(|| Box::new(invalid_utf8_in_unchecked::InvalidUtf8InUnchecked));
     store.register_late_pass(|| Box::new(std_instead_of_core::StdReexports));
+    store.register_late_pass(|| Box::new(seek_instead_of_rewind::SeekInsteadOfRewind));
     // add lints here, do not remove this comment, it's used in `new_lint`
 }
 

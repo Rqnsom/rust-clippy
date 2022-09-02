@@ -21,7 +21,6 @@ fn test_macro() {
 fn test1(foo: Box<Vec<bool>>) {}
 
 fn test2(foo: Box<dyn Fn(Vec<u32>)>) {
-    // pass if #31 is fixed
     foo(vec![1, 2, 3])
 }
 

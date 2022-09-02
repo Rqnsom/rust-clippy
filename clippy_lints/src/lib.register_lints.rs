@@ -487,6 +487,7 @@ store.register_lints(&[
     returns::LET_AND_RETURN,
     returns::NEEDLESS_RETURN,
     same_name_method::SAME_NAME_METHOD,
+    seek_instead_of_rewind::SEEK_INSTEAD_OF_REWIND,
     self_named_constructors::SELF_NAMED_CONSTRUCTORS,
     semicolon_if_nothing_returned::SEMICOLON_IF_NOTHING_RETURNED,
     serde_api::SERDE_API_MISUSE,

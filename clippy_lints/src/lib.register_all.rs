@@ -289,6 +289,7 @@ store.register_group(true, "clippy::all", Some("clippy_all"), vec![
     LintId::of(repeat_once::REPEAT_ONCE),
     LintId::of(returns::LET_AND_RETURN),
     LintId::of(returns::NEEDLESS_RETURN),
+    LintId::of(seek_instead_of_rewind::SEEK_INSTEAD_OF_REWIND),
     LintId::of(self_named_constructors::SELF_NAMED_CONSTRUCTORS),
     LintId::of(serde_api::SERDE_API_MISUSE),
     LintId::of(single_component_path_imports::SINGLE_COMPONENT_PATH_IMPORTS),
